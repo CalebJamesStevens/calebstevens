@@ -32,7 +32,9 @@ const Projects = () => {
                 <h2 className="projects-title">Projects</h2>
                 <div className="project-cards-container">
                     <div className="project-card">
-                        <img className="project-card-image" src={privateEventsThumbnail}/>
+                        <a href="https://private-events-by-caleb.herokuapp.com">
+                            <img className="project-card-image" src={privateEventsThumbnail}/>
+                        </a>
                         <p>
                             This project uses Ruby and Ruby on Rails with an
                             SQLite3 database. This project shows my understanding
@@ -40,8 +42,12 @@ const Projects = () => {
                             concepts such as joining data tables and HTTP request routing.
                         </p>
                     </div>
+                    
                     <div className="project-card">
-                        <img className="project-card-image" src={microRedditThumbnail}/>
+                        <a href="https://my-micro-reddit.herokuapp.com/">
+                            <img className="project-card-image" src={microRedditThumbnail}/>
+                        </a>
+                        
                         <p>
                             This project uses Ruby and Ruby on Rails along with preprocessors such as 
                             ERB I created a small version of 
@@ -50,8 +56,11 @@ const Projects = () => {
                             and elements of front-end responsive design.
                         </p>
                     </div>
+                    
                     <div className="project-card">
-                        <img className="project-card-image" src={cryptoAPIThumbnail}/>
+                        <a href="https://calebjamesstevens.github.io/crypto-api/">
+                            <img className="project-card-image" src={cryptoAPIThumbnail}/>
+                        </a>
                         <p>
                             Built using the React framework and vanilla CSS this
                             project showcases my ability to learn and work in many
