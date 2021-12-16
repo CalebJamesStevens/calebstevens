@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.62f17d3d.chunk.css",
+    "main.js": "/static/js/main.b158b21c.chunk.js",
+    "main.js.map": "/static/js/main.b158b21c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.df8f6d0a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.df8f6d0a.js.map",
+    "static/js/2.36b776df.chunk.js": "/static/js/2.36b776df.chunk.js",
+    "static/js/2.36b776df.chunk.js.map": "/static/js/2.36b776df.chunk.js.map",
+    "static/js/3.6bb9bc0d.chunk.js": "/static/js/3.6bb9bc0d.chunk.js",
+    "static/js/3.6bb9bc0d.chunk.js.map": "/static/js/3.6bb9bc0d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.62f17d3d.chunk.css.map": "/static/css/main.62f17d3d.chunk.css.map",
+    "static/js/2.36b776df.chunk.js.LICENSE.txt": "/static/js/2.36b776df.chunk.js.LICENSE.txt",
+    "static/media/css-3.463e319b.png": "/static/media/css-3.463e319b.png",
+    "static/media/github.04be58c1.svg": "/static/media/github.04be58c1.svg",
+    "static/media/javascript.e848bdc2.png": "/static/media/javascript.e848bdc2.png",
+    "static/media/privateEventsThumbnail.79e53aec.png": "/static/media/privateEventsThumbnail.79e53aec.png",
+    "static/media/react.73be5902.png": "/static/media/react.73be5902.png",
+    "static/media/resume-icon.98a02f47.png": "/static/media/resume-icon.98a02f47.png",
+    "static/media/resume.7dbb7cc3.pdf": "/static/media/resume.7dbb7cc3.pdf",
+    "static/media/ruby.2561da8e.png": "/static/media/ruby.2561da8e.png",
+    "static/media/ruby_on_rails.0a7ca96a.png": "/static/media/ruby_on_rails.0a7ca96a.png",
+    "static/media/sql.93646dda.png": "/static/media/sql.93646dda.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df8f6d0a.js",
+    "static/js/2.36b776df.chunk.js",
+    "static/css/main.62f17d3d.chunk.css",
+    "static/js/main.b158b21c.chunk.js"
+  ]
+}
