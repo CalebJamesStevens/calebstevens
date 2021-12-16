@@ -8,6 +8,8 @@ import RORIcon from "../skill_icons/ruby_on_rails.png";
 import RubyIcon from "../skill_icons/ruby.png";
 import SQLIcon from "../skill_icons/sql.png";
 import privateEventsThumbnail from "../privateEventsThumbnail.png";
+import microRedditThumbnail from "../microRedditThumbnail.png";
+import cryptoAPIThumbnail from "../cryptoAPIThumbnail.png";
 
 const Projects = () => {
     return (
@@ -26,19 +28,37 @@ const Projects = () => {
                 <img className="skill-icon" src={SQLIcon}/>
             </div>
             <div>
+                
                 <h2 className="projects-title">Projects</h2>
                 <div className="project-cards-container">
                     <div className="project-card">
                         <img className="project-card-image" src={privateEventsThumbnail}/>
-                        <p>Description of project!</p>
+                        <p>
+                            This project uses Ruby and Ruby on Rails with an
+                            SQLite3 database. This project shows my understanding
+                            of database management and frameworks along with
+                            concepts such as joining data tables and HTTP request routing.
+                        </p>
                     </div>
                     <div className="project-card">
-                        <img className="project-card-image" src=""/>
-                        <p>Description of project!</p>
+                        <img className="project-card-image" src={microRedditThumbnail}/>
+                        <p>
+                            This project uses Ruby and Ruby on Rails along with preprocessors such as 
+                            ERB I created a small version of 
+                            reddit with an SQLite3 database. This project shows my
+                            understanding of sessions, database management,
+                            and elements of front-end responsive design.
+                        </p>
                     </div>
                     <div className="project-card">
-                        <img className="project-card-image" src=""/>
-                        <p>Description of project!</p>
+                        <img className="project-card-image" src={cryptoAPIThumbnail}/>
+                        <p>
+                            Built using the React framework and vanilla CSS this
+                            project showcases my ability to learn and work in many
+                            concepts such as hooks, state management, and
+                            different frameworks along with understanding of
+                            navigating a 3rd party API.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -47,3 +67,6 @@ const Projects = () => {
 }
 
 export default Projects
+
+//https://private-events-by-caleb.herokuapp.com
+//https://my-micro-reddit.herokuapp.com/
