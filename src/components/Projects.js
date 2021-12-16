@@ -7,6 +7,7 @@ import ReactIcon from "../skill_icons/react.png";
 import RORIcon from "../skill_icons/ruby_on_rails.png";
 import RubyIcon from "../skill_icons/ruby.png";
 import SQLIcon from "../skill_icons/sql.png";
+import privateEventsThumbnail from "../privateEventsThumbnail.png";
 
 const Projects = () => {
     return (
@@ -28,11 +29,7 @@ const Projects = () => {
                 <h2 className="projects-title">Projects</h2>
                 <div className="project-cards-container">
                     <div className="project-card">
-                        <img className="project-card-image" src=""/>
-                        <p>Description of project!</p>
-                    </div>
-                    <div className="project-card">
-                        <img className="project-card-image" src=""/>
+                        <img className="project-card-image" src={privateEventsThumbnail}/>
                         <p>Description of project!</p>
                     </div>
                     <div className="project-card">

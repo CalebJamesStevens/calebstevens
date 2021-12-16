@@ -14,33 +14,35 @@ const Contact = () => {
 
     return (
         <div className="contact-container">
-            <div className="contact-info-container">
-                <div>Contact me</div>
-                <div>Email: <a href="calebjamesstevens219@gmail.com">calebjamesstevens219@gmail.com</a></div>
-            </div>
-            <div className="contact-form-container">
-                <form onSubmit={sendEmail} className="contact-form">
+            <div className='form-container'>
+                <div className="contact-info-container">
+                    <div>Contact me</div>
+                    <div>Email: <a href="calebjamesstevens219@gmail.com">calebjamesstevens219@gmail.com</a></div>
+                </div>
+                <div className="contact-form-container">
+                    <form onSubmit={sendEmail} className="contact-form">
 
-                    <div className="form-control">
-                        <label>Name</label><br/>
-                        <input type="text" name="name" className="form-input"/>
-                    </div>
+                        <div className="form-control">
+                            <label>Name</label><br/>
+                            <input type="text" name="name" className="form-input"/>
+                        </div>
 
-                    <div className="form-control">
-                        <label>Email</label><br/>
-                        <input type="email" name="user_email" className="form-input"/>
-                    </div>
+                        <div className="form-control">
+                            <label>Email</label><br/>
+                            <input type="email" name="user_email" className="form-input"/>
+                        </div>
 
-                    <div className="form-control">
-                        <label>Message</label><br/>
-                        <textarea type="text" name="message" cols="100" rows="20" className="form-input"/>
-                    </div>
+                        <div className="form-control">
+                            <label>Message</label><br/>
+                            <textarea id="form-message" type="text" name="message" className="form-input"/>
+                        </div>
 
-                    <div className="form-control">
-                        <input type="submit" value="Contact Me!"/>
-                    </div>
+                        <div className="form-control">
+                            <input type="submit" value="Contact Me!"/>
+                        </div>
 
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     )

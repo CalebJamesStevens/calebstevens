@@ -69,13 +69,14 @@ code {
 .skill-icon-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1vw;
 }
 
 .skill-icon {
-  width: 2vw;
-  height: 2vw;
+  width: 4rem;
+  height: 4rem;
 }
 
 .project-cards-container {
@@ -83,22 +84,40 @@ code {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 800px;
+}
+
+@media (max-width: 650px) {
+  .skill-icon {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-  height: 60%;
-  width: 20%;
-  margin: 1%;
-  border: 2px solid black;
+  height: 30rem;
+  width: 30rem;
+  margin: 3rem;
 }
 
 .project-card-image {
-  border: 1px solid black;
+  border: .15rem solid black;
+  border-radius: 3%;
   width: 100%;
-  height: 80%;
+  height: 100%;
+}
+
+@media (max-width: 650px) {
+  .project-cards-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .project-card {
+    height: 20rem;
+    width: 20rem;
+  }
 }
 
 .resume-container {
@@ -117,8 +136,8 @@ code {
 }
 
 .resume-icon {
-  height: 40%;
-  width: 13%;
+  height: 20rem;
+  width: 20rem;
 }
 
 .resume-icon a img {
@@ -126,9 +145,17 @@ code {
   width: 100%;
 }
 
+
 .contact-container {
   display: flex;
   height: 800px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: min(90%, 1800px);
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -138,19 +165,44 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: .2vw solid #6096BA;
+  border-left: .2rem solid #6096BA;
   padding: 10px;
 }
 
+
 .contact-info-container div {
-  font-size: 2vh;
+  font-size: 1.25rem;
 }
 
 .contact-form-container {
   margin-left: 10%;
+  width: 50%;
+}
+
+#form-message {
+  width: min(90%, 50rem);
+  height: 15rem;
+
 }
 
 .form-control {
-  margin-top: 5%;
+  margin-top: 1rem;
 }
 
+@media (max-width: 650px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #form-message {
+    height: 10rem;
+  
+  }
+
+  .contact-form-container {
+    width: 70%;
+  }
+}

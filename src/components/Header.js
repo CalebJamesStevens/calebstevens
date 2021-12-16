@@ -1,9 +1,6 @@
 const Header = (props) => {
     return (
         <header className="header">
-            <div className="header-item">
-                <button/>
-            </div>
 
             <div className="header-item">
                 <h1 className="header-text">Caleb Stevens</h1>
