@@ -5,7 +5,7 @@ const Header = (props) => {
         <header className="header">
 
             <div className="header-item">
-                <h1 className="header-text">Caleb Stevens</h1>
+                <p className="header-text">Caleb Stevens</p>
             </div>
             
             <div className="header-item">
