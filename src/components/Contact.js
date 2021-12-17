@@ -17,7 +17,7 @@ const Contact = () => {
             <div className='form-container'>
                 <div className="contact-info-container">
                     <div>Contact me</div>
-                    <div>Email: <a href="calebjamesstevens219@gmail.com">calebjamesstevens219@gmail.com</a></div>
+                    <div>Email: <a href="mailto:calebjamesstevens219@gmail.com">calebjamesstevens219@gmail.com</a></div>
                 </div>
                 <div className="contact-form-container">
                     <form onSubmit={sendEmail} className="contact-form">
