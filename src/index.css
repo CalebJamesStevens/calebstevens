@@ -29,7 +29,7 @@ code {
 }
 
 .header-item {
-  width: 300px;
+  width: 20rem;
 }
 
 .header-text {
@@ -45,13 +45,13 @@ code {
 }
 
 .nav-items li:not(:last-child) {
-  border-right: .15vw solid #E7ECEF;
+  border-right: .15rem solid #E7ECEF;
 }
 
 .nav-items li a{
   text-decoration: none;
   color: inherit;
-  padding: 1vw;
+  padding: .6rem;
 }
 
 .projects-container {
@@ -59,7 +59,7 @@ code {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 2vh;
+  margin: 2rem;
 }
 
 .skills-text {
