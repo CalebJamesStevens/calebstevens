@@ -9,7 +9,7 @@ const Resume = () => {
             <div className="resume-icon">
                 <a href={ResumePDF}><img src={ResumeIcon}/></a>
             </div>
-            <a onMouseOver={mouseOver} href={ResumePDF} download><h2>Click To Download Resume</h2></a>
+            <a onMouseOver={mouseOver} href={ResumePDF} download="caleb-stevens-resume"><h2>Click To Download Resume</h2></a>
         </div>
     )
 }

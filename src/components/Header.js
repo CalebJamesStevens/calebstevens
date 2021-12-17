@@ -12,7 +12,7 @@ const Header = (props) => {
                 <ul className="nav-items">
                     <li><a href="https://www.linkedin.com/in/caleb-s-0482ba139/">LinkedIn</a></li>
                     <li><a href="https://github.com/CalebJamesStevens">GitHub</a></li>
-                    <li><a href={ResumePDF} download>Resume</a></li>
+                    <li><a href={ResumePDF} download="caleb-stevens-resume">Resume</a></li>
                 </ul>
             </div>
 
