@@ -24,21 +24,21 @@ const Contact = () => {
 
                         <div className="form-control">
                             <label>Name</label><br/>
-                            <input type="text" name="name" className="form-input"/>
+                            <input className="form-input" type="text" name="name" className="form-input"/>
                         </div>
 
                         <div className="form-control">
                             <label>Email</label><br/>
-                            <input type="email" name="user_email" className="form-input"/>
+                            <input className="form-input" type="email" name="user_email" className="form-input"/>
                         </div>
 
                         <div className="form-control">
                             <label>Message</label><br/>
-                            <textarea id="form-message" type="text" name="message" className="form-input"/>
+                            <textarea className="form-input" id="form-message" type="text" name="message" className="form-input"/>
                         </div>
 
                         <div className="form-control">
-                            <input type="submit" value="Contact Me!"/>
+                            <input className='form-submit-button' type="submit" value="Contact Me!"/>
                         </div>
 
                     </form>
