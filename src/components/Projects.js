@@ -32,6 +32,7 @@ const Projects = () => {
                 <h2 className="projects-title">Projects</h2>
                 <div className="project-cards-container">
                     <div className="project-card">
+                        <h1>Private Events</h1>
                         <a href="https://private-events-by-caleb.herokuapp.com">
                             <img className="project-card-image" src={privateEventsThumbnail}/>
                         </a>
@@ -44,6 +45,7 @@ const Projects = () => {
                     </div>
                     
                     <div className="project-card">
+                        <h1>Micro-Reddit</h1>
                         <a href="https://my-micro-reddit.herokuapp.com/">
                             <img className="project-card-image" src={microRedditThumbnail}/>
                         </a>
@@ -58,6 +60,7 @@ const Projects = () => {
                     </div>
                     
                     <div className="project-card">
+                        <h1>Crypto Tracking API</h1>
                         <a href="https://calebjamesstevens.github.io/crypto-api/">
                             <img className="project-card-image" src={cryptoAPIThumbnail}/>
                         </a>
