@@ -18,14 +18,14 @@ const Projects = () => {
                 <h1 className="skills-text">Skills</h1>
             </div>
             <div className="skill-icon-container">
-                <img className="skill-icon" src={CSSIcon}/>
-                <img className="skill-icon" src={HTMLIcon}/>
-                <img className="skill-icon" src={GitHubIcon}/>
-                <img className="skill-icon" src={JSIcon}/>
-                <img className="skill-icon" src={ReactIcon}/>
-                <img className="skill-icon" src={RORIcon}/>
-                <img className="skill-icon" src={RubyIcon}/>
-                <img className="skill-icon" src={SQLIcon}/>
+                <img className="skill-icon" alt="image of CSS skill badge" src={CSSIcon}/>
+                <img className="skill-icon" alt="image of HTML skill badge" src={HTMLIcon}/>
+                <img className="skill-icon" alt="image of Git skill badge" src={GitHubIcon}/>
+                <img className="skill-icon" alt="image of JavaScript skill badge" src={JSIcon}/>
+                <img className="skill-icon" alt="image of React skill badge" src={ReactIcon}/>
+                <img className="skill-icon" alt="image of Rails skill badge" src={RORIcon}/>
+                <img className="skill-icon" alt="image of Ruby skill badge" src={RubyIcon}/>
+                <img className="skill-icon" alt="image of SQL skill badge" src={SQLIcon}/>
             </div>
             <div>
                 
