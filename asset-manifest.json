@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.64435ae3.chunk.css",
-    "main.js": "/static/js/main.33778e4f.chunk.js",
-    "main.js.map": "/static/js/main.33778e4f.chunk.js.map",
+    "main.css": "/static/css/main.26d491e9.chunk.css",
+    "main.js": "/static/js/main.91adbadc.chunk.js",
+    "main.js.map": "/static/js/main.91adbadc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.df8f6d0a.js",
     "runtime-main.js.map": "/static/js/runtime-main.df8f6d0a.js.map",
     "static/js/2.36b776df.chunk.js": "/static/js/2.36b776df.chunk.js",
@@ -10,12 +10,12 @@
     "static/js/3.6bb9bc0d.chunk.js": "/static/js/3.6bb9bc0d.chunk.js",
     "static/js/3.6bb9bc0d.chunk.js.map": "/static/js/3.6bb9bc0d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.64435ae3.chunk.css.map": "/static/css/main.64435ae3.chunk.css.map",
+    "static/css/main.26d491e9.chunk.css.map": "/static/css/main.26d491e9.chunk.css.map",
     "static/js/2.36b776df.chunk.js.LICENSE.txt": "/static/js/2.36b776df.chunk.js.LICENSE.txt",
     "static/media/cryptoAPIThumbnail.89b79768.png": "/static/media/cryptoAPIThumbnail.89b79768.png",
     "static/media/css-3.463e319b.png": "/static/media/css-3.463e319b.png",
     "static/media/github.04be58c1.svg": "/static/media/github.04be58c1.svg",
-    "static/media/javascript.e848bdc2.png": "/static/media/javascript.e848bdc2.png",
+    "static/media/javascript.4b810da7.png": "/static/media/javascript.4b810da7.png",
     "static/media/microRedditThumbnail.8f610673.png": "/static/media/microRedditThumbnail.8f610673.png",
     "static/media/privateEventsThumbnail.1b87824b.png": "/static/media/privateEventsThumbnail.1b87824b.png",
     "static/media/react.73be5902.png": "/static/media/react.73be5902.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.df8f6d0a.js",
     "static/js/2.36b776df.chunk.js",
-    "static/css/main.64435ae3.chunk.css",
-    "static/js/main.33778e4f.chunk.js"
+    "static/css/main.26d491e9.chunk.css",
+    "static/js/main.91adbadc.chunk.js"
   ]
 }
