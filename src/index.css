@@ -67,13 +67,16 @@ code {
 .skills-text {
   text-decoration-line: underline;
 }
-
+.projects-title {
+  text-decoration-line: underline;
+}
 .skill-icon-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1vw;
+  margin-bottom: 5rem;
 }
 
 .skill-icon {
