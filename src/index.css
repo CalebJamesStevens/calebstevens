@@ -173,34 +173,10 @@ code {
   }
 }
 
-.resume-container {
-  background-color: #E7ECEF;
-  text-decoration: none;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.resume-container a {
-  text-decoration: none;
-  color: #8B8C89;
-}
-
-.resume-icon {
-  height: 20rem;
-  width: 20rem;
-}
-
-.resume-icon a img {
-  height: 100%;
-  width: 100%;
-}
-
 
 .contact-container {
   display: flex;
+  flex-direction: column;
   height: 800px;
   align-items: center;
   justify-content: center;
