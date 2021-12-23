@@ -10,9 +10,9 @@ const Header = (props) => {
             
             <div className="header-item">
                 <ul className="nav-items">
-                    <li><a href="https://www.linkedin.com/in/caleb-s-0482ba139/">LinkedIn</a></li>
-                    <li><a href="https://github.com/CalebJamesStevens">GitHub</a></li>
-                    <li><a href={ResumePDF} download="caleb-stevens-resume">Resume</a></li>
+                    <li><a className="link-anim-1" href="https://www.linkedin.com/in/caleb-s-0482ba139/">LinkedIn</a></li>
+                    <li><a className="link-anim-1" href="https://github.com/CalebJamesStevens">GitHub</a></li>
+                    <li><a className="link-anim-1" href={ResumePDF} download="caleb-stevens-resume">Resume</a></li>
                 </ul>
             </div>
 
