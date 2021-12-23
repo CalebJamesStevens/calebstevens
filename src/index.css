@@ -56,12 +56,22 @@ code {
   padding: .6rem;
 }
 
-.projects-container {
+.about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+
+
+.projects-container {
+  display: flex;
+  background-color: #E7ECEF;
+
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  margin: 2rem;
 }
 
 .skills-text {
@@ -150,7 +160,6 @@ code {
 
 
 .contact-container {
-  background-color: #E7ECEF;
   display: flex;
   height: 800px;
   align-items: center;
