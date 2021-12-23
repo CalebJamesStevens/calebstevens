@@ -18,6 +18,10 @@ code {
 
 }
 
+
+
+
+
 .link-anim-1 {
   position: relative;
 }
@@ -81,6 +85,18 @@ code {
   height: 40rem;
 }
 
+.about-p-1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.about-p-2 {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  .about-container {height: 30rem;}
+}
 
 .projects-container {
   display: flex;
@@ -179,7 +195,7 @@ code {
 }
 
 .form-container {
-  width: min(90%, 1800px);
+  width: min(90%, 900px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,7 +203,7 @@ code {
 
 .contact-form-container {
   margin-top: 3rem;
-  width: 50%;
+  width: 100%;
 }
 
 #form-message {

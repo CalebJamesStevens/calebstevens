@@ -1,8 +1,8 @@
 const About = () => {
     return (
         <div className="about-container">
-            <h1>Hello, I'm Caleb Stevens.</h1>
-            <h3>I'm a full-stack web developer.</h3>
+            <p className="about-p-1">Hello, I'm Caleb Stevens.</p>
+            <p className="about-p-2">I'm a full-stack web developer.</p>
         </div>
     );
 }
