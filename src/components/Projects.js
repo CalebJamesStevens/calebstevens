@@ -33,9 +33,10 @@ const Projects = () => {
                 <div className="project-cards-container">
                     <div className="project-card">
                         <h2>Private Events</h2>
-                        <a href="https://private-events-by-caleb.herokuapp.com">
+                        <a className='project-img-link' href="https://private-events-by-caleb.herokuapp.com">
                             <img className="project-card-image" src={privateEventsThumbnail}/>
                         </a>
+                        <div className="project-links"><a href="https://github.com/CalebJamesStevens/private-events">GitHub</a> | <a href="https://private-events-by-caleb.herokuapp.com">Live Site</a></div>
                         <p>
                             This project uses Ruby and Ruby on Rails with an
                             SQLite3 database. This project shows my understanding
@@ -46,10 +47,10 @@ const Projects = () => {
                     
                     <div className="project-card">
                         <h2>Micro-Reddit</h2>
-                        <a href="https://my-micro-reddit.herokuapp.com/">
+                        <a className='project-img-link' href="https://my-micro-reddit.herokuapp.com/">
                             <img className="project-card-image" src={microRedditThumbnail}/>
                         </a>
-                        
+                        <div className="project-links"><a href="https://github.com/CalebJamesStevens/micro-reddit">GitHub</a> | <a href="https://my-micro-reddit.herokuapp.com/">Live Site</a></div>
                         <p>
                             This project uses Ruby and Ruby on Rails along with preprocessors such as 
                             ERB I created a small version of 
@@ -61,9 +62,10 @@ const Projects = () => {
                     
                     <div className="project-card">
                         <h2>Crypto Tracking API</h2>
-                        <a href="https://calebjamesstevens.github.io/crypto-api/">
+                        <a className='project-img-link' href="https://calebjamesstevens.github.io/crypto-api/">
                             <img className="project-card-image" src={cryptoAPIThumbnail}/>
                         </a>
+                        <div className="project-links"><a href="https://github.com/CalebJamesStevens/crypto-api">GitHub</a> | <a href="https://calebjamesstevens.github.io/crypto-api/">Live Site</a></div>
                         <p>
                             Built using the React framework and vanilla CSS this
                             project showcases my ability to learn and work in many
