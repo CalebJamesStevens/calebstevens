@@ -1,6 +1,6 @@
 import ResumePDF from "../files/resume.pdf"
 
-const Header = (props) => {
+const Footer = (props) => {
     return (
         <header className="header">
             
@@ -16,4 +16,4 @@ const Header = (props) => {
     )
 }
 
-export default Header
+export default Footer
