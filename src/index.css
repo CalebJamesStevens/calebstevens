@@ -234,7 +234,12 @@ code {
   padding: .65rem;
   color: white;
   background-color: #274C77;
-    
+  cursor:pointer;
+  transition-duration: 150ms;
+}
+
+.form-submit-button:hover {
+  background-color: #6096BA;
 }
 
 @media (max-width: 650px) {
