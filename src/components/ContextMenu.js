@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
+
 const ContextMenu = () => {
     return (
-        <div>
+        <div className="context-menu-container">
 
         </div>
     );
