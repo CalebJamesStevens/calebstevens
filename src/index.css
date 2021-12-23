@@ -150,6 +150,7 @@ code {
 
 
 .contact-container {
+  background-color: #E7ECEF;
   display: flex;
   height: 800px;
   align-items: center;
@@ -200,6 +201,7 @@ code {
 }
 
 .form-input {
+  background-color: inherit;
   border: none;
   border-bottom: black 1px solid;
 }
