@@ -3,10 +3,6 @@ import ResumePDF from "../files/resume.pdf"
 const Header = (props) => {
     return (
         <header className="header">
-
-            <div className="header-item">
-                <p className="header-text">Caleb Stevens</p>
-            </div>
             
             <div className="header-item">
                 <ul className="nav-items">

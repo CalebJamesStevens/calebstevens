@@ -67,10 +67,6 @@ code {
   
 }
 
-.nav-items li:not(:last-child) {
-  border-right: .15rem solid #E7ECEF;
-}
-
 .nav-items li a{
   text-decoration: none;
   color: inherit;
@@ -189,22 +185,8 @@ code {
   justify-content: center;
 }
 
-.contact-info-container {
-  height: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-left: .2rem solid #6096BA;
-  padding: 10px;
-}
-
-
-.contact-info-container div {
-  font-size: 1.25rem;
-}
-
 .contact-form-container {
-  margin-left: 10%;
+  margin-top: 3rem;
   width: 50%;
 }
 
