@@ -8,10 +8,10 @@ import About from './components/AboutMe';
 function App() {
   return (
     <div className="container">
-      <Header />
       <About />
       <Projects />
       <Contact />
+      <Header />
     </div>
   );
 }
