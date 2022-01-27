@@ -9,6 +9,7 @@ import RubyIcon from "../skill_icons/ruby.png";
 import SQLIcon from "../skill_icons/sql.png";
 import privateEventsThumbnail from "../privateEventsThumbnail.png";
 import microRedditThumbnail from "../microRedditThumbnail.png";
+import reptlandThumbnail from "../reptland_screenshot.png";
 import cryptoAPIThumbnail from "../cryptoAPIThumbnail.png";
 
 const Projects = () => {
@@ -20,17 +21,41 @@ const Projects = () => {
             <div className="skill-icon-container">
                 <img className="skill-icon" alt="image of CSS skill badge" src={CSSIcon}/>
                 <img className="skill-icon" alt="image of HTML skill badge" src={HTMLIcon}/>
-                <img className="skill-icon" alt="image of Git skill badge" src={GitHubIcon}/>
                 <img className="skill-icon" alt="image of JavaScript skill badge" src={JSIcon}/>
+                <img className="skill-icon" alt="image of Git skill badge" src={GitHubIcon}/>
                 <img className="skill-icon" alt="image of React skill badge" src={ReactIcon}/>
                 <img className="skill-icon" alt="image of Rails skill badge" src={RORIcon}/>
-                <img className="skill-icon" alt="image of Ruby skill badge" src={RubyIcon}/>
+                <img className="skill-icon" alt="image of Ruby skill badge" src={'https://www.vectorlogo.zone/logos/ruby-lang/ruby-lang-icon.svg'}/>
                 <img className="skill-icon" alt="image of SQL skill badge" src={SQLIcon}/>
+                <img className="skill-icon" alt="image of NodeJS skill badge" src={'https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg'}/>
+                <img className="skill-icon" alt="image of Git skill badge" src={'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg'}/>
+                <img className="skill-icon" alt="image of MongoDB skill badge" src={'https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg'}/>
             </div>
             <div>
                 
                 <h1 className="projects-title">Projects</h1>
                 <div className="project-cards-container">
+                    
+                    <div className="project-card">
+                        <h2>Reptland</h2>
+                        <a className='project-img-link' href="https://reptland.com/">
+                            <img className="project-card-image" src={reptlandThumbnail}/>
+                        </a>
+                        <div className="project-links"><a className='link-anim-1' href="https://github.com/CalebJamesStevens/reptland">GitHub</a> | <a className='link-anim-1' href="https://reptland.com/">Live Site</a></div>
+                        <p>
+                            Reptland was my favorite project to work on by far.
+                            My wife and I are reptile enthusiasts and when I got
+                            the idea to create a social media platform for those
+                            who share our love I couldn't stop. I used the MERN stack
+                            on this project. MongoDB, Express, ReactJS, and Node. I chose
+                            MongoDB as my database because I wanted to experiment with noSQL and
+                            it was actually really fun and inciteful. I created my own api for my
+                            back end and used middleware such as PassportJS for authentication and
+                            multer/AWS S3 for media uploads. The experience I gained from this project
+                            was crucial to my development as a fulstack developer.
+                        </p>
+                    </div>
+
                     <div className="project-card">
                         <h2>Private Events</h2>
                         <a className='project-img-link' href="https://private-events-by-caleb.herokuapp.com">
@@ -45,20 +70,6 @@ const Projects = () => {
                         </p>
                     </div>
                     
-                    <div className="project-card">
-                        <h2>Micro-Reddit</h2>
-                        <a className='project-img-link' href="https://my-micro-reddit.herokuapp.com/">
-                            <img className="project-card-image" src={microRedditThumbnail}/>
-                        </a>
-                        <div className="project-links"><a className='link-anim-1' href="https://github.com/CalebJamesStevens/micro-reddit">GitHub</a> | <a className='link-anim-1' href="https://my-micro-reddit.herokuapp.com/">Live Site</a></div>
-                        <p>
-                            This project uses Ruby and Ruby on Rails along with preprocessors such as 
-                            ERB I created a small version of 
-                            reddit with an SQLite3 database. This project shows my
-                            understanding of sessions, database management,
-                            and elements of front-end responsive design.
-                        </p>
-                    </div>
                     
                     <div className="project-card">
                         <h2>Crypto Tracking API</h2>
