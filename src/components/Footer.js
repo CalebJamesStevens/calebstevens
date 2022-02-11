@@ -1,5 +1,5 @@
-import ResumePDF from "../files/Caleb_Stevens_Resume.pdf"
- Footer = (props) => {
+import ResumePDF from "../files/Caleb_Stevens_Resume.pdf";
+const Footer = (props) => {
     return (
         <header className="header">
             
