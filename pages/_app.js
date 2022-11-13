@@ -6,6 +6,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <Navbar />
       <Component {...pageProps} />
     </ThemeProvider>
   );
