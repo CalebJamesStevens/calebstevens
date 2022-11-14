@@ -45,6 +45,14 @@ export const HomePage = () => {
           Passion for accessibility, efficiency, and innovation. I believe in making things work for everyone.
         </Typography>
       </Box>
+      <Box>
+        <Typography
+          sx={styles.skillIconsHeader}
+          variant="h3"
+        >
+          Current Tech Stack
+        </Typography>
+      </Box>
     </Box>
   );
 };

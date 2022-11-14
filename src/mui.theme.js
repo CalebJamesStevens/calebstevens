@@ -28,11 +28,18 @@ theme.typography = {
   ...theme.typography,
   fontSize: '1.2rem',
   h1: {
+    letterSpacing: '-.025em',
     '@media (min-width:600px)': {
       fontSize: '1.875rem',
     },
     [theme.breakpoints.up('sm')]: {
       fontSize: '3rem',
     },
+  },
+  h3: {
+    fontWeight: '700',
+    letterSpacing: '-.025em',
+    fontSize: '2.25rem',
+    lineHeight: '2.5rem',
   },
 };
