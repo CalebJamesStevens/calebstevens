@@ -14,9 +14,25 @@ export const theme = createTheme({
     primary: {
       main: '#037ffc',
     },
+    secondary: {
+      main: '#faebd7',
+    },
     background: {
       default: '#002029',
       main: '#00303D',
     },
   },
 });
+
+theme.typography = {
+  ...theme.typography,
+  fontSize: '1.2rem',
+  h1: {
+    '@media (min-width:600px)': {
+      fontSize: '1.875rem',
+    },
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '3rem',
+    },
+  },
+};
