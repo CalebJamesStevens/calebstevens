@@ -4,11 +4,14 @@ import React from 'react';
 import Link from 'next/link';
 
 /** MUI Components */
-import { Drawer, IconButton, List, ListItem, ListItemButton } from '@mui/material';
 import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
 
 /** Icons */
-import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 
 /** Styles */
