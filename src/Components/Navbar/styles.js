@@ -2,6 +2,7 @@ export const styles = {
   navList: {
     maxWidth: '400px',
     marginInline: 'auto',
+    marginTop: (theme) => theme.spacing(2),
     display: 'flex',
     '& a': {
       all: 'unset',
