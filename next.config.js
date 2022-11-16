@@ -8,6 +8,7 @@ const resolveRoot = (newPath) => {
 module.exports = {
   webpack: (config) => {
     const resolveAlias = config.resolve.alias;
+
     config = {
       ...config,
       resolve: {
@@ -18,6 +19,10 @@ module.exports = {
         },
       },
     };
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
     config.devtool = process.env.NODE_ENV !== 'production' && 'eval-source-map';
     return config;
   },

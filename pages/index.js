@@ -1,8 +1,15 @@
 import React from 'react';
 
 /** MUI Components */
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import { Box } from '@mui/system';
+
+/** Components */
+import ProjectCard from '../src/Components/HomePage/ProjectCard/ProjectCard';
+
+/** Icon */
+import CodeplateIcon from '../public/codeplate-icon.svg';
 
 const styles = {
   bioHeadingGroup: {
@@ -19,6 +26,21 @@ const styles = {
     fontWeight: '400',
     marginTop: (theme) => theme.spacing(2),
     color: (theme) => theme.palette.secondary.main,
+  },
+  featuredArticles: {
+    marginBlock: (theme) => theme.spacing(8),
+    temporaryMessage: {
+      width: '100%',
+      textAlign: 'center',
+      marginTop: (theme) => theme.spacing(8),
+      color: (theme) => theme.palette.secondary.main,
+      fontSize: '1.2rem',
+    },
+  },
+  projects: {
+    gridContainer: {
+      marginTop: (theme) => theme.spacing(4),
+    },
   },
 };
 
@@ -45,13 +67,26 @@ export const HomePage = () => {
           Passion for accessibility, efficiency, and innovation. I believe in making things work for everyone.
         </Typography>
       </Box>
-      <Box>
-        <Typography
-          sx={styles.skillIconsHeader}
-          variant="h3"
-        >
-          Current Tech Stack
+      <Box sx={styles.featuredArticles}>
+        <Typography variant="h3">Featured Articles</Typography>
+        <Typography sx={styles.featuredArticles.temporaryMessage}>
+          Hopefully this section will be filling up soon!
         </Typography>
+      </Box>
+      <Box sx={styles.projects}>
+        <Typography variant="h3">Some of My Projects</Typography>
+        <Grid
+          sx={styles.projects.gridContainer}
+          container
+        >
+          <ProjectCard
+            icon={CodeplateIcon}
+            heading={'Codeplate'}
+            githubLink={'https://github.com/CalebJamesStevens/codeplate'}
+          >
+            <Typography>A lightweight but powerful template generator.</Typography>
+          </ProjectCard>
+        </Grid>
       </Box>
     </Box>
   );

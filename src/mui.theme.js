@@ -12,13 +12,14 @@ export const theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#037ffc',
+      main: '#00607A',
     },
     secondary: {
       main: '#faebd7',
     },
     background: {
       default: '#002029',
+      light: '#004052',
       main: '#00303D',
     },
   },
@@ -39,7 +40,10 @@ theme.typography = {
   h3: {
     fontWeight: '700',
     letterSpacing: '-.025em',
-    fontSize: '2.25rem',
+    fontSize: '1.5rem',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '2.25rem',
+    },
     lineHeight: '2.5rem',
   },
 };
