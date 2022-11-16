@@ -6,6 +6,7 @@ const config = {
   modulePathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
   moduleNameMapper: {
     '^Navbar$': '<rootDir>/src/Components/Navbar/Navbar.js',
+    '^ProjectCard$': '<rootDir>/src/Components/HomePage/ProjectCard/ProjectCard.js',
     '^react-testing-library$': '<rootDir>/src/react-testing-library.js',
   },
   testEnvironment: 'jsdom',

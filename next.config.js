@@ -16,6 +16,7 @@ module.exports = {
         alias: {
           ...resolveAlias,
           Navbar: resolveRoot('./src/Components/Navbar/Navbar'),
+          ProjectCard: resolveRoot('./src/Components/HomePage/ProjectCard/ProjectCard'),
         },
       },
     };
