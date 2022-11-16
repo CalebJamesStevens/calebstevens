@@ -1,6 +1,6 @@
 export const styles = {
   navList: {
-    maxWidth: '400px',
+    maxWidth: 'fit-content',
     marginInline: 'auto',
     marginTop: (theme) => theme.spacing(2),
     display: 'flex',
