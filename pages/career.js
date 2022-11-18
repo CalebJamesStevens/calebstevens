@@ -126,7 +126,7 @@ const styles = {
     width: '100%',
   },
   timeline: {
-    marginTop: (theme) => theme.spacing(15),
+    marginTop: (theme) => theme.spacing(10),
     width: '2px',
     backgroundColor: 'white',
     '&.MuiBox-root': (theme) => ({
