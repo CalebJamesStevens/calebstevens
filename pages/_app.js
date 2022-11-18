@@ -5,6 +5,7 @@ import { theme } from '../src/mui.theme';
 import { ThemeProvider } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
@@ -22,6 +23,7 @@ import Link from 'next/link';
 
 const styles = {
   componentContainer: (theme) => ({
+    flex: '1',
     [theme.breakpoints.up('xs')]: {
       maxWidth: '750px',
     },
@@ -45,55 +47,62 @@ const styles = {
       },
     },
   },
+  appContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
+  },
 };
 
 export default function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Navbar />
-      <Container sx={styles.componentContainer}>
-        <Component {...pageProps} />
-      </Container>
-      <Divider sx={styles.footerDivider} />
-      <Container
-        sx={styles.footer}
-        component={'footer'}
-      >
-        <Grid
-          container
-          sx={styles.footer.gridContainer}
+      <Box sx={styles.appContainer}>
+        <Navbar />
+        <Container sx={styles.componentContainer}>
+          <Component {...pageProps} />
+        </Container>
+        <Divider sx={styles.footerDivider} />
+        <Container
+          sx={styles.footer}
+          component={'footer'}
         >
-          <Grid item>
-            <Button
-              href={'https://www.linkedin.com/in/calebjstevens/'}
-              variant={'text'}
-            >
-              <LinkedIn />
-              LinkedIn
-            </Button>
+          <Grid
+            container
+            sx={styles.footer.gridContainer}
+          >
+            <Grid item>
+              <Button
+                href={'https://www.linkedin.com/in/calebjstevens/'}
+                variant={'text'}
+              >
+                <LinkedIn />
+                LinkedIn
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                href={'https://github.com/CalebJamesStevens'}
+                variant={'text'}
+              >
+                <GitHub />
+                GitHub
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                component={Link}
+                href={'/blog'}
+                variant={'text'}
+              >
+                <Book />
+                Blog
+              </Button>
+            </Grid>
           </Grid>
-          <Grid item>
-            <Button
-              href={'https://github.com/CalebJamesStevens'}
-              variant={'text'}
-            >
-              <GitHub />
-              GitHub
-            </Button>
-          </Grid>
-          <Grid item>
-            <Button
-              component={Link}
-              href={'/blog'}
-              variant={'text'}
-            >
-              <Book />
-              Blog
-            </Button>
-          </Grid>
-        </Grid>
-      </Container>
+        </Container>
+      </Box>
     </ThemeProvider>
   );
 }

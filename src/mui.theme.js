@@ -37,6 +37,15 @@ theme.typography = {
       fontSize: '3rem',
     },
   },
+  h2: {
+    letterSpacing: '-.025em',
+    '@media (min-width:600px)': {
+      fontSize: '1.5rem',
+    },
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '2.5rem',
+    },
+  },
   h3: {
     fontWeight: '700',
     letterSpacing: '-.025em',
