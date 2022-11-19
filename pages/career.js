@@ -258,8 +258,6 @@ export const CareerPage = () => {
   const matches = useMediaQuery((theme) => theme.breakpoints.down('md'));
 
   React.useEffect(() => {
-    console.log(timelineRef.current.lastChild.style);
-    console.log(matches);
     if (matches) {
       timelineRef.current.lastChild.style.height = `${
         timelineRef?.current?.lastChild.lastChild.lastChild.clientHeight + 75
