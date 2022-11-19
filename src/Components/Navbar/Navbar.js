@@ -63,11 +63,6 @@ export const Navbar = () => {
                   <ListItemButton>Career</ListItemButton>
                 </Link>
               </ListItem>
-              <ListItem>
-                <Link href="/resume">
-                  <ListItemButton>Resume</ListItemButton>
-                </Link>
-              </ListItem>
             </List>
           </Box>
         </Drawer>
@@ -94,11 +89,6 @@ export const Navbar = () => {
         <ListItem>
           <Link href="/career">
             <ListItemButton>Career</ListItemButton>
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href="/resume">
-            <ListItemButton>Resume</ListItemButton>
           </Link>
         </ListItem>
       </List>
