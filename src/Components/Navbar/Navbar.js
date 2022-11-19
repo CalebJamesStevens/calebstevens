@@ -27,18 +27,17 @@ export const Navbar = () => {
   if (mobile) {
     return (
       <>
-        {!drawerOpen && (
-          <Box sx={styles.mobileNavBar}>
-            <IconButton
-              onClick={() => {
-                setDrawerOpen(true);
-              }}
-              aria-label={'Open Navigation Menu'}
-            >
-              <MenuIcon />
-            </IconButton>
-          </Box>
-        )}
+        <Box sx={styles.mobileNavBar}>
+          <IconButton
+            onClick={() => {
+              setDrawerOpen(true);
+            }}
+            aria-label={'Open Navigation Menu'}
+          >
+            <MenuIcon />
+          </IconButton>
+        </Box>
+
         <Drawer
           anchor={'right'}
           open={drawerOpen}
