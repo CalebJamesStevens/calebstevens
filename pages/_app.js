@@ -58,6 +58,25 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <Head>
+        <title>Caleb Stevens</title>
+        <meta
+          name={'description'}
+          content={
+            'Calebstevens.dev is a blog and portfolio site written by Caleb Stevens about front end web development, design, javascript, and other technologies. The blog provides tutorials and resources for HTML, CSS, ReactJS, NodeJS, Express, NextJS and other technologies that form the world of Front End Web Development.'
+          }
+        />
+        <meta
+          name="author"
+          content="Caleb Stevens"
+        />
+        <meta
+          name={'keywords'}
+          content={
+            'React, CSS, HTML, Web Devlopment, Front End, Junior Web Developer, Software Engineering, React, JavaScript, Node, NexJS, ExpressJS'
+          }
+        />
+      </Head>
       <Box sx={styles.appContainer}>
         <Navbar />
         <Container sx={styles.componentContainer}>
