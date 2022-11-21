@@ -7,6 +7,7 @@ const config = {
   moduleNameMapper: {
     '^Navbar$': '<rootDir>/src/Components/Navbar/Navbar.js',
     '^ProjectCard$': '<rootDir>/src/Components/HomePage/ProjectCard/ProjectCard.js',
+    '^ArticleWrapper$': '<rootDir>/src/Components/ArticleWrapper/ArticleWrapper.js',
     '^react-testing-library$': '<rootDir>/src/react-testing-library.js',
   },
   testEnvironment: 'jsdom',
