@@ -2,7 +2,7 @@ import React from 'react';
 import useSWR from 'swr';
 
 /** MUI Components */
-import { Typography } from '@mui/material';
+import { CircularProgress, Typography } from '@mui/material';
 
 /** Icons */
 import { Visibility } from '@mui/icons-material';
@@ -23,7 +23,7 @@ export default function ViewCount({ slug }) {
   return (
     <Typography sx={styles.text}>
       <Visibility />
-      {views > 0 ? views.toLocaleString() : '0'}
+      {views ? views > 0 ? views.toLocaleString() : '0' : <CircularProgress sx={styles.circularProgress} />}
     </Typography>
   );
 }
