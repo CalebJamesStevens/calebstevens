@@ -122,7 +122,10 @@ export const BlogHomePage = ({ articles }) => {
 export const getStaticProps = async () => {
   const files = await fs.readdirSync(path.join(process.cwd(), 'pages', 'blog'), { withFileTypes: true });
 
-  const mdxFiles = files.filter((file) => file.name.endsWith('.mdx'));
+  let mdxFiles = files.filter((file) => {
+    const fileData = fs.readFileSync(path.join(process.cwd(), 'pages', 'blog', file.name), 'utf-8');
+    return !!matter(fileData)?.data?.publish;
+  });
   const filesWithContent = mdxFiles.map((file) => {
     const fileData = fs.readFileSync(path.join(process.cwd(), 'pages', 'blog', file.name), 'utf-8');
     const { data, content } = matter(fileData);
