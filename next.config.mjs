@@ -39,6 +39,7 @@ export default withMDX({
           ...resolveAlias,
           Navbar: resolveRoot('./src/Components/Navbar/Navbar'),
           ProjectCard: resolveRoot('./src/Components/HomePage/ProjectCard/ProjectCard'),
+          FeaturedArticleCard: resolveRoot('./src/Components/HomePage/FeaturedArticleCard/FeaturedArticleCard'),
           ArticleWrapper: resolveRoot('./src/Components/ArticleWrapper/ArticleWrapper'),
         },
       },

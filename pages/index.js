@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 
 /** Components */
 import ProjectCard from '../src/Components/HomePage/ProjectCard/ProjectCard';
+import FeaturedArticleCard from 'FeaturedArticleCard';
 
 /** Icon */
 import CodeplateIcon from '../public/codeplate-icon.svg';
@@ -69,9 +70,9 @@ export const HomePage = () => {
       </Box>
       <Box sx={styles.featuredArticles}>
         <Typography variant="h3">Featured Articles</Typography>
-        <Typography sx={styles.featuredArticles.temporaryMessage}>
-          Hopefully this section will be filling up soon!
-        </Typography>
+        <Grid container>
+          <FeaturedArticleCard>First Six Month As A Junior: Learn How To Learn</FeaturedArticleCard>
+        </Grid>
       </Box>
       <Box sx={styles.projects}>
         <Typography variant="h3">Some of My Projects</Typography>
