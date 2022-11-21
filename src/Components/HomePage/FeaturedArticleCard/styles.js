@@ -10,6 +10,11 @@ export const styles = {
       display: 'flex',
       alignItems: 'center',
     },
+    actionsDivider: {
+      height: '30px',
+      width: '4px',
+      borderColor: 'white',
+    },
     linkIcon: {
       rotate: '45deg',
       transition: '250ms',

@@ -41,6 +41,8 @@ export default withMDX({
           ProjectCard: resolveRoot('./src/Components/HomePage/ProjectCard/ProjectCard'),
           FeaturedArticleCard: resolveRoot('./src/Components/HomePage/FeaturedArticleCard/FeaturedArticleCard'),
           ArticleWrapper: resolveRoot('./src/Components/ArticleWrapper/ArticleWrapper'),
+          ViewCount: resolveRoot('./src/Components/ViewCount/ViewCount'),
+          IncrementViewCount: resolveRoot('./src/Components/IncrementViewCount/IncrementViewCount'),
         },
       },
     };

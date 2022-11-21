@@ -9,6 +9,9 @@ import { Divider, IconButton } from '@mui/material';
 /** NextJs Components */
 import Link from 'next/link';
 
+/** Components */
+import ViewCount from 'ViewCount';
+
 /** Utilities */
 import fs from 'fs';
 import path from 'path';
@@ -22,6 +25,11 @@ const styles = {
     display: 'flex',
     width: '100%',
     justifyContent: 'space-between',
+    actionsDivider: {
+      height: '30px',
+      width: '4px',
+      borderColor: 'white',
+    },
     articleActions: {
       display: 'flex',
       alignItems: 'center',
@@ -102,6 +110,11 @@ export const BlogHomePage = ({ articles }) => {
                 </Typography>
               </Box>
               <Box sx={styles.article.articleActions}>
+                <ViewCount slug={article.data.slug} />
+                <Divider
+                  orientation="vertical"
+                  sx={styles.article.actionsDivider}
+                />
                 <IconButton
                   onClick={() => {
                     window.navigator.clipboard.writeText('https://calebstevens.dev/blog/' + article.data.slug);

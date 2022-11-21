@@ -5,6 +5,10 @@ import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+
+/** Components */
+import ViewCount from 'ViewCount';
 
 /** NextJs Components */
 import Link from 'next/link';
@@ -35,6 +39,11 @@ export const ProjectCard = ({ slug, children }) => {
         </Typography>
       </Box>
       <Box sx={styles.article.articleActions}>
+        <ViewCount slug={slug} />
+        <Divider
+          orientation="vertical"
+          sx={styles.article.actionsDivider}
+        />
         <IconButton
           onClick={() => {
             window.navigator.clipboard.writeText('https://calebstevens.dev/blog/' + slug);
