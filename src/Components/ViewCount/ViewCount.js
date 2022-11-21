@@ -23,7 +23,7 @@ export default function ViewCount({ slug }) {
   return (
     <Typography sx={styles.text}>
       <Visibility />
-      {views ? views > 0 ? views.toLocaleString() : '0' : <CircularProgress sx={styles.circularProgress} />}
+      {data ? views > 0 ? views.toLocaleString() : '0' : <CircularProgress sx={styles.circularProgress} />}
     </Typography>
   );
 }
