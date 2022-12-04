@@ -2,6 +2,26 @@
 publish: false
 ---
 
+import React from 'react';
+
+import Quiz from 'Quiz';
+import Question from 'Question';
+
+<Quiz title={'Some Quiz'}>
+  <Question
+    groupName={'firstQuestion'}
+    options={['Choice A', 'Choice B', 'Choice Z']}
+    title={'First Question'}
+    answers={['Choice B']}
+  />
+  <Question
+    title={'Second Question'}
+    groupName={'secondQuestion'}
+    options={['Choice 1', 'Choice 2', 'Beef 3']}
+    answers={['Choice 2']}
+  />
+</Quiz>
+
 Especially since I went the self taught route. That by itself is a whole other article, but for the mean time I'll keep the explanation simple.
 
 Firstly, I had been teaching myself various things about programming since I was about 12. I learned some python in Blender,

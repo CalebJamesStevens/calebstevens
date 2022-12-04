@@ -43,6 +43,8 @@ export default withMDX({
           ArticleWrapper: resolveRoot('./src/Components/ArticleWrapper/ArticleWrapper'),
           ViewCount: resolveRoot('./src/Components/ViewCount/ViewCount'),
           IncrementViewCount: resolveRoot('./src/Components/IncrementViewCount/IncrementViewCount'),
+          Quiz: resolveRoot('./src/Components/Quiz/Quiz'),
+          Question: resolveRoot('./src/Components/Quiz/Question/Question'),
         },
       },
     };
