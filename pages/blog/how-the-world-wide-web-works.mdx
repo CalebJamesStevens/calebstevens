@@ -1,0 +1,124 @@
+---
+publish: true
+title: 'How The World Wide Web Works'
+slug: how-the-world-wide-web-works
+---
+
+import React from 'react';
+import ViewCount from 'ViewCount';
+import IncrementViewCount from 'IncrementViewCount';
+import Quiz from 'Quiz';
+import Question from 'Question';
+
+<IncrementViewCount slug={'how-the-world-wide-web-works'} />
+<ViewCount slug={'how-the-world-wide-web-works'} />
+
+# How The World Wide Web Works
+
+Wanting to become a Web Developer is a great challenge to take on. I'm hoping I can help make that journey a little easier. Today we will be going over part one of my Modern Web Development series where we will discuss the basics of web development theory.
+
+We will discuss:
+
+1. What the Web (or World Wide Web)
+2. What is the Internet?
+3. What is the browser?
+4. How does a browser display a website?
+5. What is an IP address?
+6. What is HTML, CSS and Javascript?
+
+## Video Explanation
+
+Please watch this YouTube video and then answer the quiz below!
+
+<iframe
+  width="100%"
+  style={{ aspectRatio: '16/9', marginBottom: '32px' }}
+  src="https://www.youtube.com/embed/7ivnuLwzWp4"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+<Quiz title={'World Wide Web Quiz'}>
+  <Question
+    title={'What is the World Wide Web?'}
+    groupName={'whatIsTheWorldWideWeb'}
+    options={[
+      'A vast network of physically connected computers used to transfer data and other resources.',
+      'An information system allowing web resources to be accessed over the internet.',
+      'The mail courier system in the USA.',
+    ]}
+    answers={['An information system allowing web resources to be accessed over the internet.']}
+  />
+  <Question
+    title={'What is the internet?'}
+    groupName={'whatIsTheInternet'}
+    options={[
+      'An application that allows you to request and recieve websites.',
+      'The opposite of the outernet.',
+      'A vast network of physically connected computers used to transfer data and other resources.',
+    ]}
+    answers={['A vast network of physically connected computers used to transfer data and other resources.']}
+  />
+  <Question
+    title={'What is a browser?'}
+    groupName={'whatIsABrowser'}
+    options={[
+      'An application that allows you to request, recieve, and display websites.',
+      'A markup language for building documents to display on the web.',
+      'A computer that recieves requests from and sends data to other computers.',
+    ]}
+    answers={['An application that allows you to request, recieve, and display websites.']}
+  />
+  <Question
+    title={'How does a browser display websites?'}
+    groupName={'howDoesABrowserDisplayWebsites'}
+    options={[
+      'MS Paint.',
+      'By using HTML, CSS, and JavaScript files to build a copy of the website.',
+      'By borrowing the original files of a website from a server.',
+    ]}
+    answers={['By using HTML, CSS, and JavaScript files to build a copy of the website.']}
+  />
+  <Question
+    title={'What is an IP Address?'}
+    groupName={'whatIsAnIpAddress'}
+    options={[
+      'A unique ID for a machine that the internet uses to locate a machine.',
+      'The place where websites are stored.',
+      'An alcoholic beverage for software engineers.',
+    ]}
+    answers={['A unique ID for a machine that the internet uses to locate a machine.']}
+  />
+  <Question
+    title={'What is HTML?'}
+    groupName={'html'}
+    options={[
+      'A protocol used to send hypermedia documents over a network.',
+      'Hipsters That Mate for Life',
+      'A markup language for building documents to display on the web.',
+    ]}
+    answers={['A markup language for building documents to display on the web.']}
+  />
+  <Question
+    title={'What is CSS?'}
+    groupName={'css'}
+    options={[
+      'A programming language that powers interactivity on a website.',
+      'A style sheet language used to control the presentation of a website.',
+      "An error shown when a user Can't See a Site.",
+    ]}
+    answers={['A style sheet language used to control the presentation of a website.']}
+  />
+  <Question
+    title={'What is JavaScript?'}
+    groupName={'javascript'}
+    options={[
+      'A markup language for building documents to display on the web.',
+      'The best work of a writer after he drinks some good coffee.',
+      'A programming language that powers interactivity on a website.',
+    ]}
+    answers={['A programming language that powers interactivity on a website.']}
+  />
+</Quiz>
