@@ -23,6 +23,30 @@ export const theme = createTheme({
       main: '#00303D',
     },
   },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        'img, svg, video': {
+          maxWidth: '100%',
+          height: 'auto',
+        },
+        'p code, li code': {
+          fontFamily: '"JetBrains Mono", "Fira Code", Menlo, Consolas, monospace',
+          fontSize: '0.92em',
+          backgroundColor: 'rgba(255, 255, 255, 0.09)',
+          border: '1px solid rgba(255, 255, 255, 0.14)',
+          borderRadius: '6px',
+          padding: '0.08rem 0.3rem',
+        },
+        a: {
+          color: '#ffffff',
+        },
+        'a:visited': {
+          color: '#ffffff',
+        },
+      },
+    },
+  },
 });
 
 theme.typography = {

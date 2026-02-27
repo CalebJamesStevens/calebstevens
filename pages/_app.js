@@ -21,6 +21,11 @@ import LinkedIn from '@mui/icons-material/LinkedIn';
 /** Next Components */
 import Link from 'next/link';
 import Head from 'next/head';
+import { MDXProvider } from '@mdx-js/react';
+
+/** MDX Components */
+import CodeBlock from '../src/Components/CodeBlock/CodeBlock';
+import MarkdownImage from '../src/Components/MarkdownImage/MarkdownImage';
 
 const styles = {
   componentContainer: (theme) => ({
@@ -53,6 +58,34 @@ const styles = {
     flexDirection: 'column',
     minHeight: '100vh',
   },
+};
+
+const MarkdownLink = ({ href = '', ...props }) => {
+  const isExternal = /^https?:\/\//i.test(href);
+
+  if (isExternal) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        {...props}
+      />
+    );
+  }
+
+  return (
+    <Link
+      href={href}
+      {...props}
+    />
+  );
+};
+
+const mdxComponents = {
+  pre: (props) => <CodeBlock {...props} />,
+  img: (props) => <MarkdownImage {...props} />,
+  a: (props) => <MarkdownLink {...props} />,
 };
 
 export default function MyApp({ Component, pageProps }) {
@@ -102,7 +135,9 @@ export default function MyApp({ Component, pageProps }) {
       <Box sx={styles.appContainer}>
         <Navbar />
         <Container sx={styles.componentContainer}>
-          <Component {...pageProps} />
+          <MDXProvider components={mdxComponents}>
+            <Component {...pageProps} />
+          </MDXProvider>
         </Container>
         <Divider sx={styles.footerDivider} />
         <Container
