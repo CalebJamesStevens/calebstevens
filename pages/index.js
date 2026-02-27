@@ -71,6 +71,7 @@ export const HomePage = () => {
       <Box sx={styles.featuredArticles}>
         <Typography variant="h3">Featured Articles</Typography>
         <Grid container>
+          <FeaturedArticleCard slug={'secure-vps'}>Secure Your Server Part 1: Setting Up WireGuard</FeaturedArticleCard>
           <FeaturedArticleCard slug={'what-i-learned-in-the-first-six-months-as-a-junior-developer-1'}>
             First Six Month As A Junior: Learn How To Learn
           </FeaturedArticleCard>
