@@ -21,6 +21,7 @@ import LinkedIn from '@mui/icons-material/LinkedIn';
 /** Next Components */
 import Link from 'next/link';
 import Head from 'next/head';
+import Script from 'next/script';
 import { MDXProvider } from '@mdx-js/react';
 
 /** MDX Components */
@@ -89,6 +90,8 @@ const mdxComponents = {
 };
 
 export default function MyApp({ Component, pageProps }) {
+  const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -132,6 +135,14 @@ export default function MyApp({ Component, pageProps }) {
           href="/site.webmanifest"
         />
       </Head>
+      {recaptchaSiteKey ? (
+        <Script
+          src={`https://www.google.com/recaptcha/api.js?render=${encodeURIComponent(
+            recaptchaSiteKey
+          )}&trustedtypes=true`}
+          strategy="afterInteractive"
+        />
+      ) : null}
       <Box sx={styles.appContainer}>
         <Navbar />
         <Container sx={styles.componentContainer}>
